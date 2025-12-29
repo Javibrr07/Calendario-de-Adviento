@@ -1,0 +1,341 @@
+.dia9 .contenedor {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  background: #06203a;
+}
+
+.dia9 .nieve {
+  position: absolute;
+  top: -10px;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: caer linear infinite;
+}
+
+.dia9 .nieve:nth-child(1) { left: 10%; animation-duration: 6s; }
+.dia9 .nieve:nth-child(2) { left: 30%; animation-duration: 8s; width: 4px; height: 4px; }
+.dia9 .nieve:nth-child(3) { left: 50%; animation-duration: 7s; }
+.dia9 .nieve:nth-child(4) { left: 70%; animation-duration: 9s; width: 3px; height: 3px; }
+.dia9 .nieve:nth-child(5) { left: 90%; animation-duration: 6.5s; }
+
+    @keyframes caer {
+        0% {
+            transform: translateY(0);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(220px);
+            opacity: 0;
+        }
+    }
+
+
+.dia10 .regalo {
+position: relative;
+width: 200px;
+height: 150px;
+background: #b22222;
+padding: 30px;
+border: 5px solid rgba(239, 235, 4);
+
+}
+
+.dia10 .elfo{
+position:absolute;
+width: 40px;
+top:49%;
+left:40%;
+}
+
+
+
+.dia11 .ventanas {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 150px);
+}
+
+.dia11 .ventanas div {
+    background: #b6babe;
+    border: 7px solid #1c252e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dia11 .ventanas img {
+    height: 70px;
+}
+
+
+
+
+
+
+
+.dia12 .menu ul {
+  list-style: none;
+  display: flex;               
+  background-color: #28a745;  
+}
+
+.dia12 .menu li {
+  padding: 15px 20px;
+  color: white;
+}
+
+
+
+
+
+
+
+.dia13 h1{color: black;}
+.dia13 .postal {
+background-color: rgba(210, 176, 5, 0.925);
+width: 90%;
+margin: 20px auto;
+padding: 40px 15px;
+text-align: center;
+color: white;
+border-radius: 10px;
+}
+
+@media(max-width: 600px) {
+.dia13 .postal {background-color: #8a2be2;}
+}
+
+
+
+
+
+
+
+
+.dia14 .caja {
+--color-fondo: #b7b4b4;
+--color-boton: #d94343;
+--color-texto: #ffffff;
+
+  width: 250px;
+  height: 120px;
+  background-color: var(--color-fondo);
+  border: 2px solid #d94343;
+  display: flex;
+  align-items: center;
+}
+
+.dia14 .boton {
+background-color: var(--color-boton);
+color: var(--color-texto);
+border: none;
+cursor: pointer;
+}
+
+.dia14 .caja:hover {
+  --color-fondo: #00d5ff;
+  --color-boton: #08f783;
+  --color-texto: #d00ad7;
+}
+
+
+
+
+
+
+
+
+
+.dia15 .plegable1{
+width: 120px;
+height: 40px;
+background-color: yellow;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.dia15 .plegable2{
+width: 120px;
+height: 40px;
+background-color: rgb(255, 21, 0);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.dia15 .plegable1:hover{
+width: 300px;    
+}
+.dia15 .plegable2:hover
+{
+width: 300px;    
+}
+
+
+
+
+
+
+
+.dia16 table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.dia16 th {
+    background-color: #22a653;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.dia16 td {
+    padding: 8px;
+    border: 2px solid #000000;
+}
+.dia16 tbody tr:nth-child(odd) {
+    background-color: #cecccc;
+}
+
+
+.dia17 .copo {
+  position: relative;
+  width: 60px;
+  height: 6px;
+  background: blue;
+}
+
+.copo::before,
+.copo::after {
+  content: "";
+  position: absolute;
+  top: -27px;
+  left: 27px;
+  width: 6px;
+  height: 60px;
+  background: blue;
+}
+
+.dia17 .copo::before {
+  transform: rotate(45deg);
+}
+
+.dia17 .copo::after {
+  transform: rotate(-45deg);
+}
+
+
+
+
+.dia18{
+  width: 300px;
+  filter: grayscale(100%) blur(4px);
+}
+
+
+
+.dia19 .galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dia19 .galeria img {
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+
+.dia19 .grande {
+  grid-column: 1/3;
+}
+
+
+.dia20 .contenedor{
+background-color: #b22222;
+width: 200px; 
+height: 200px;  
+overflow: auto;
+}
+
+.dia20 p{
+color: white;
+}
+
+
+.dia21 .bola_cristal img{
+width: 100px;
+height: 100px; 
+transition: transform 0.6s;
+}
+
+.dia21 .bola_cristal:hover img{
+transform: rotate(360deg)
+}
+
+
+.dia22 input {
+  padding: 5px;
+  border: auto;
+  
+  width: 600px;
+}
+
+.dia22 input:focus {
+  border-color: #4CAF50;  
+  outline: none;
+}
+
+
+.dia25 h1 {
+  color: #d32f2f;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+
+}
+
+.dia25 .secreto {
+  color: #1976d2;
+  opacity: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dia25 .mensaje-secreto:hover .secreto {
+  opacity: 1; 
+}
+
+
+.dia27 input:invalid {
+  border: 2px solid red;
+}
+
+.dia27 input:valid {
+  border: 2px solid green;
+}
+
+
+
+.dia28 .contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.dia28 .boton {
+  background-color: #4c84af;
+  color: white;
+  padding: 10px;
+  border: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+.dia28  .contenedor {
+    grid-template-columns:repeat(1, 1fr) 
+  }
+}
